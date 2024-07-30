@@ -28,7 +28,7 @@ import requests
 import urllib.parse
 
 def connect_to_db():
-    engine = create_engine('postgresql+psycopg2://postgres:Ellipsispostgres42$@localhost/BDCFabric')
+    engine = create_engine('postgresql+psycopg2://postgres:password@localhost/BDCFabric')
     return engine
 
 def fetch_addresses():
