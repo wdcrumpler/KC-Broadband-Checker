@@ -31,7 +31,7 @@ shutdown_flag = False
 
 def connect_to_db():
     engine = create_engine(
-        'postgresql+psycopg2://postgres:Ellipsispostgres42$@localhost/BDCFabric',
+        'postgresql+psycopg2://postgres:password@localhost/BDCFabric',
         #echo=True,  # Log SQL statements (for debugging purposes; disable in production)
         pool_size=1,  # Number of connections to maintain in the pool
         max_overflow=20,  # Allow up to 30 connections in total (10 + 20)
